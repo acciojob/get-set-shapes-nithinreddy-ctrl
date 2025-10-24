@@ -33,7 +33,11 @@ class Square extends Rectangle {
   }
 }
 
-// Demo functionality
+// Expose classes for Cypress test access
+window.Rectangle = Rectangle;
+window.Square = Square;
+
+// Optional: demo for UI button
 const button = document.getElementById('runDemo');
 const output = document.getElementById('output');
 
